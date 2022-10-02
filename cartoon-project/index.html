@@ -4,28 +4,124 @@
 <head>
     <meta charset="utf-8">
     <title>cartoon-project</title>
-    <!-- <link href="style.css" rel="stylesheet"> -->
     <script>
-    function changeCanvasColor () {
-		// Locate the element "mycanvas" in the document.
-        var canvas = document.getElementById("mycanvas");
-        var context = canvas.getContext("2d");
- 
-		context.font="20px Arial";
-        context.fillStyle = "black";
-        context.textAlign = "center";
+        function changeCanvasColor() {
+            // Locate the element "mycanvas" in the document.
+            var canvas = document.getElementById("mycanvas");
+            var context = canvas.getContext("2d");
+            //setting background color
+            context.fillStyle = "green";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+            //ground
+            context.beginPath();
+            context.rect(0, 0, 800, 500);
+            context.fillStyle = "aqua";
+            context.strokeStyle = "aqua";
+            context.fill();
+            context.stroke();
+            //added title in canvas
+            context.font = "20px Arial";
+            context.fillStyle = "black";
+            context.textAlign = "center";
+            context.fillText("cartoon-project", 400, 20);
+            //sun
+            context.beginPath();
+            context.arc(90, 80, 60, 0, 2 * Math.PI);
+            context.fillStyle = "yellow"
+            context.strokeStyle = "black";
+            context.fill();
+            context.stroke();
+            //clouds
+            context.beginPath();
+            context.arc(230, 120, 30, 0, 2 * Math.PI);
+            context.arc(270, 120, 40, 0, 2 * Math.PI);
+            context.arc(310, 120, 30, 0, 2 * Math.PI);
+            context.arc(500, 120, 30, 0, 2 * Math.PI);
+            context.arc(540, 120, 40, 0, 2 * Math.PI);
+            context.arc(580, 120, 30, 0, 2 * Math.PI);
+            context.fillStyle = "white";
+            context.strokeStyle = "white";
+            context.fill();
+            context.stroke();
+            //house
+            context.beginPath();
+            context.rect(500, 300, 200, 200);
+            context.fillStyle = "#eba834";
+            context.strokeStyle = "black";
+            context.fill();
+            context.stroke();
+            //roof
+            context.beginPath();
+            context.moveTo(450, 300);
+            context.lineTo(600, 200);
+            context.lineTo(750, 300);
+            context.lineTo(450, 300);
+            context.fillStyle = "red"
+            context.strokeStyle = "black"
+            context.fill();
+            context.stroke();
+            //window
+            context.beginPath();
+            context.moveTo(535, 330)
+            context.lineTo(535, 380)
+            context.lineTo(585, 380)
+            context.lineTo(585, 330)
+            context.lineTo(535, 330)
+            context.fillStyle = "#829fd1";
+            context.strokeStyle = "black";
+            context.fill()
+            context.stroke()
+            //door
+            context.beginPath();
+            context.moveTo(600, 500);
+            context.lineTo(600, 400);
+            context.lineTo(670, 400);
+            context.lineTo(670, 500);
+            context.fillStyle = "red"
+            context.strokeStyle = "black";
+            context.fill()
+            context.stroke()
+            //tree trunk
+            context.beginPath();
+            context.rect(100, 350, 50, 150);
+            context.fillStyle = "#d19f82"
+            context.fill()
+            //tree branches
+            context.beginPath();
+            context.arc(130, 280, 82, 0, 2 * Math.PI);
+            context.arc(70, 300, 80, 0, 2 * Math.PI);
+            context.arc(100, 350, 80, 0, 2 * Math.PI);
+            context.arc(110, 250, 80, 0, 2 * Math.PI);
+            context.arc(170, 330, 80, 0, 2 * Math.PI);
+            context.arc(130, 280, 82, 0, 2 * Math.PI);
+            context.arc(170, 250, 80, 0, 2 * Math.PI);
+            context.fillStyle = "#38d648"
+            context.strokeStyle = "#38d648"
+            context.fill()
+            context.stroke()
+            //grass
+            context.beginPath()
+            //setup the start position
+            var x = 180, y = 500;
+            for(var i = 0; i < 14; i++){
+                context.moveTo(x, y);
+                context.lineTo(x + 20, y - 20);
+                context.lineTo(x + 40, y);
+                context.fillStyle = "#4be35a"
+                context.strokeStyle = "#4be35a"
+                context.fill()
+                context.stroke()
+                x += 20;
+            }
+        }
 
-		context.fillText("cartoon-project",400,20);
-    }
-
-	// Once the HTML document has finished loading and has been parsed, call the changeCanvasColor function.
-    document.addEventListener('DOMContentLoaded', changeCanvasColor);
+        // Once the HTML document has finished loading and has been parsed, call the changeCanvasColor function.
+        document.addEventListener('DOMContentLoaded', changeCanvasColor);
     </script>
 </head>
 
 <body>
-    <canvas id="mycanvas" width="800" height="700" 
-    blackground-color="yellow" style="border:1px solid #000000;"></canvas>
+    <canvas id="mycanvas" width="800" height="700" style="border:1px solid #000000;"></canvas>
 </body>
 <footer>CISC 3610 Huiyu Guan <a href="../index.html">Return to main page</a></footer>
 
