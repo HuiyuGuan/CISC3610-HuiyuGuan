@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Color Chart Program</title>
+    <script>
+        function main() {
+            var canvas = document.getElementById("mycanvas");
+            var context = canvas.getContext("2d");
+            //Drawing coordinate axes
+            //y axes
+            context.beginPath();
+            context.moveTo(50, 550);
+            context.lineTo(700, 550);
+            context.strokeStyle = "black";
+            context.stroke();
+            //x axes
+            context.beginPath();
+            context.moveTo(100, 600);
+            context.lineTo(100, 100);
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var fruit = [
+                { name: "Straberry", quantity: 15, color: "red" },
+                { name: "Peach", quantity: 10, color: "orange" },
+                { name: "Banana", quantity: 25, color: "yellow" },
+                { name: "Pear", quantity: 10, color: "#C6D457" },
+                { name: "Grape", quantity: 20, color: "purple" }
+            ]
+            console.log(fruit[0].quantity)
+            var x = 150, y = 530;
+            for (var i = 0; i < fruit.length; i++) {
+                for (var j = 0; j < fruit[i].quantity; j++) {
+                    context.beginPath()
+                    context.rect(x, y, 20, 20);
+                    context.fillStyle = fruit[i].color;
+                    context.fill()
+                    context.stroke()
+                    y -= 20;
+                }
+                context.font = "20px Arial";
+                context.fillStyle = "black";
+                context.textAlign = "center";
+                context.fillText(fruit[i].name, 180 + i*80, 580);
+                y = 530
+                x += 80
+            }
+            context.font = "20px Arial";
+                context.fillStyle = "black";
+                context.textAlign = "center";
+                context.fillText("Huiyu Guan Lab1", 300, 600);
+        }
+
+        document.addEventListener('DOMContentLoaded', main);
+    </script>
+</head>
+
+<body>
+    <h1>Color Chart Program</h1>
+    <canvas id="mycanvas" width="800" height="700" style="border:1px solid #000000;"></canvas>
+</body>
+<footer>CISC 3610 Huiyu Guan <a href="../index.html">Return to main page</a></footer>
+
+</html>
