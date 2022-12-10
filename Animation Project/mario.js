@@ -1,4 +1,4 @@
-parrot={
+mario={
 	src : "spritesheet.png",
 	img: undefined,
 	frame:0,
@@ -9,188 +9,167 @@ parrot={
 			"frame": {
 				"x": 1,
 				"y": 1,
-				"w": 287,
-				"h": 264
+				"w": 15,
+				"h": 33
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 287,
-				"h": 264
+				"w": 15,
+				"h": 33
 			},
 			"sourceSize": {
-				"w": 287,
-				"h": 264
+				"w": 15,
+				"h": 33
 			}
 		},
 		{
 			"filename": "tile001.png",
 			"frame": {
-				"x": 290,
+				"x": 18,
 				"y": 1,
-				"w": 287,
-				"h": 264
+				"w": 21,
+				"h": 33
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 287,
-				"h": 264
+				"w": 21,
+				"h": 33
 			},
 			"sourceSize": {
-				"w": 287,
-				"h": 264
+				"w": 21,
+				"h": 33
 			}
 		},
 		{
 			"filename": "tile002.png",
 			"frame": {
-				"x": 1,
-				"y": 267,
-				"w": 286,
-				"h": 264
+				"x": 41,
+				"y": 1,
+				"w": 26,
+				"h": 33
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 286,
-				"h": 264
+				"w": 26,
+				"h": 33
 			},
 			"sourceSize": {
-				"w": 286,
-				"h": 264
+				"w": 26,
+				"h": 33
 			}
 		},
 		{
 			"filename": "tile003.png",
 			"frame": {
-				"x": 289,
-				"y": 267,
-				"w": 287,
-				"h": 264
+				"x": 1,
+				"y": 36,
+				"w": 24,
+				"h": 33
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 287,
-				"h": 264
+				"w": 24,
+				"h": 33
 			},
 			"sourceSize": {
-				"w": 287,
-				"h": 264
+				"w": 24,
+				"h": 33
 			}
 		},
 		{
 			"filename": "tile004.png",
 			"frame": {
-				"x": 1,
-				"y": 533,
-				"w": 287,
-				"h": 264
+				"x": 27,
+				"y": 36,
+				"w": 22,
+				"h": 33
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 287,
-				"h": 264
+				"w": 22,
+				"h": 33
 			},
 			"sourceSize": {
-				"w": 287,
-				"h": 264
+				"w": 22,
+				"h": 33
 			}
 		},
 		{
 			"filename": "tile005.png",
 			"frame": {
-				"x": 290,
-				"y": 533,
-				"w": 286,
-				"h": 264
+				"x": 51,
+				"y": 36,
+				"w": 21,
+				"h": 33
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 286,
-				"h": 264
+				"w": 21,
+				"h": 33
 			},
 			"sourceSize": {
-				"w": 286,
-				"h": 264
+				"w": 21,
+				"h": 33
 			}
 		},
 		{
 			"filename": "tile006.png",
 			"frame": {
-				"x": 579,
+				"x": 69,
 				"y": 1,
-				"w": 287,
-				"h": 264
+				"w": 22,
+				"h": 33
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 287,
-				"h": 264
+				"w": 22,
+				"h": 33
 			},
 			"sourceSize": {
-				"w": 287,
-				"h": 264
+				"w": 22,
+				"h": 33
 			}
 		},
 		{
 			"filename": "tile007.png",
 			"frame": {
-				"x": 578,
-				"y": 267,
-				"w": 287,
-				"h": 264
+				"x": 74,
+				"y": 36,
+				"w": 23,
+				"h": 33
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 287,
-				"h": 264
+				"w": 23,
+				"h": 33
 			},
 			"sourceSize": {
-				"w": 287,
-				"h": 264
-			}
-		},
-		{
-			"filename": "tile008.png",
-			"frame": {
-				"x": 578,
-				"y": 533,
-				"w": 286,
-				"h": 264
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 286,
-				"h": 264
-			},
-			"sourceSize": {
-				"w": 286,
-				"h": 264
+				"w": 23,
+				"h": 33
 			}
 		}
 	],
@@ -200,9 +179,9 @@ parrot={
 		"image": "spritesheet.png",
 		"format": "RGBA8888",
 		"size": {
-			"w": 593,
-			"h": 36
+			"w": 98,
+			"h": 70
 		},
 		"scale": "1"
 	}
-}
+    }

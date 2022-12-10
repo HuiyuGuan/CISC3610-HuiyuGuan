@@ -10,15 +10,15 @@ Scene.start = function () {
 	// Get the canvas and it's context.
     Scene.canvas = document.getElementById("myCanvas");
     Scene.canvasContext = Scene.canvas.getContext("2d");
-	
-	// Seup the parrot to be displayed.
+
+	// Seup the mario to be displayed.
     Scene.sprite = mario;
 	
 	// Attach the image to be used for the sprite.
 	Scene.sprite.img = new Image();
     Scene.sprite.img.src = Scene.sprite.src;
 	
-	// Wait till the parrot image is loaded before starting the animation.
+	// Wait till the mario image is loaded before starting the animation.
 	Scene.sprite.img.onload = function() {		
 		Scene.sprite.offset=-Scene.sprite.frames[Scene.sprite.frame].frame.w;
     	Scene.mainLoop();
@@ -38,8 +38,8 @@ Scene.mainLoop = function() {
     Scene.update();
     Scene.draw();
 	
-	// Animate at 24 frames a second.
-    window.setTimeout(Scene.mainLoop, 1000 /24);
+	// Animate at 8 frames a second.
+    window.setTimeout(Scene.mainLoop, 1000 / 8);
 };
 
 Scene.update = function () {
@@ -53,7 +53,7 @@ Scene.update = function () {
 };
 
 Scene.draw = function () {
-	Scene.canvasContext.drawImage(Scene.sprite.img,Scene.sprite.frames[Scene.sprite.frame].frame.x,Scene.sprite.frames[Scene.sprite.frame].frame.y,Scene.sprite.frames[Scene.sprite.frame].frame.w,Scene.sprite.frames[Scene.sprite.frame].frame.h,Scene.sprite.offset,0,Scene.sprite.frames[Scene.sprite.frame].frame.w,Scene.sprite.frames[Scene.sprite.frame].frame.h);
+	Scene.canvasContext.drawImage(Scene.sprite.img,Scene.sprite.frames[Scene.sprite.frame].frame.x,Scene.sprite.frames[Scene.sprite.frame].frame.y,Scene.sprite.frames[Scene.sprite.frame].frame.w,Scene.sprite.frames[Scene.sprite.frame].frame.h,Scene.sprite.offset,335,Scene.sprite.frames[Scene.sprite.frame].frame.w,Scene.sprite.frames[Scene.sprite.frame].frame.h);
 	
 	// Advance to the next frame.
 	Scene.sprite.frame++;
