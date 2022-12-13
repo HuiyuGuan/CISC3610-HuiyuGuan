@@ -1,5 +1,5 @@
 # CISC3610-HuiyuGuan
-Project List
+Project List <br />
 [Cartoon Project](https://huiyuguan.github.io/CISC3610-HuiyuGuan/Cartoon%20Project/index.html)<br />
 [Color Chart Program](https://huiyuguan.github.io/CISC3610-HuiyuGuan/Color%20Chart%20Program/index.html)<br />
 [Animation Project](https://huiyuguan.github.io/CISC3610-HuiyuGuan/Animation%20Project/index.html)<br />
